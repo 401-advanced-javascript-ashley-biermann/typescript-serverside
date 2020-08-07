@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+// import VendingMachine from './lib/vending-machine';
 var app_1 = require("./lib/app");
 function addNumbers(a, b) {
     return a + b;
