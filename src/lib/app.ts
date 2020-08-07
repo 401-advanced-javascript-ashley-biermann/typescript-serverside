@@ -13,10 +13,7 @@ const io: socketio.Server = socketio(server);
 
 app.use(express.static('./public'));
 
-
-// our first interface for a payload!
-//   classes for varibles??
-//   contract for a group of data type.
+// contract for a group of data type.
 interface Payload {
   createdAt: string;
   text: string;
@@ -33,7 +30,7 @@ const messages: MessageData = {
   count: 0
 };
 
-// hopefully familiar territory
+
 app.get('/info', (req: express.Request, res: express.Response, next: express.NextFunction): void => {
   console.log(req.query);
   res.send('hiting our slash route');
